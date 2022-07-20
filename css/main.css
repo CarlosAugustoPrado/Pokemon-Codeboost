@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000000;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+button[disabled] {
+  cursor: not-allowed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  margin: 0 auto;
+  padding: 0px 1.5rem;
+}
+
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 24.4rem;
+  max-width: 12.1rem;
+  padding: 0.6rem 0.4rem;
+}
+.tag.blue-tag .icon {
+  background-color: rgba(63, 104, 186, 0.15);
+}
+.tag.blue-tag span {
+  color: #3F67BA;
+}
+.tag .icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: rgba(194, 0, 0, 0.2);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 0.8rem;
+}
+.tag span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #C20001;
+}
+
+.search {
+  background-color: #FFFFFF;
+  border-radius: 122px;
+  height: 5.6rem;
+  width: 100%;
+  max-width: 40.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 0.7rem;
+}
+.search input[type=text] {
+  border: 0;
+  outline: none;
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #4A5257;
+}
+.search input[type=text]::-webkit-input-placeholder {
+  color: #A0AFBA;
+}
+.search input[type=text]::-moz-placeholder {
+  color: #A0AFBA;
+}
+.search input[type=text]:-ms-input-placeholder {
+  color: #A0AFBA;
+}
+.search input[type=text]::-ms-input-placeholder {
+  color: #A0AFBA;
+}
+.search input[type=text]::placeholder {
+  color: #A0AFBA;
+}
+.search button {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: rgba(158, 185, 225, 0.1);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.search button:hover {
+  border-color: #3E75C3;
+}
+
+.type-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.type-filter:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+}
+.type-filter .icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.type-filter span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.type-filter.ghost span {
+  color: #616EB7;
+}
+.type-filter.bug span {
+  color: #9BBA48;
+}
+.type-filter.dark span {
+  color: #595761;
+}
+.type-filter.dragon span {
+  color: #2C6AC1;
+}
+.type-filter.electric span {
+  color: #EED967;
+}
+.type-filter.fairy span {
+  color: #E296E1;
+}
+.type-filter.fighting span {
+  color: #C44D61;
+}
+.type-filter.ground span {
+  color: #CE8056;
+}
+.type-filter.ice span {
+  color: #8BCEC1;
+}
+.type-filter.normal span {
+  color: #A0A29F;
+}
+.type-filter.poison span {
+  color: #AC6ACA;
+}
+.type-filter.psychic span {
+  color: #EB8B85;
+}
+.type-filter.rock span {
+  color: #8BCEC1;
+}
+.type-filter.grass span {
+  color: #73B861;
+}
+.type-filter.steel span {
+  color: #6594A1;
+}
+.type-filter.water span {
+  color: #88A3D4;
+}
+.type-filter.fire span {
+  color: #F66D6D;
+}
+.type-filter.flying span {
+  color: #A6BBE8;
+}
+
+.card-pokemon {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  height: 30.4rem;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.2);
+  box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.2);
+  border-radius: 12px;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card-pokemon:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+  box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+}
+.card-pokemon.grass .image:after {
+  background-color: rgba(114, 184, 97, 0.2);
+}
+.card-pokemon.dark .image:after {
+  background-color: rgba(114, 184, 97, 0.2);
+}
+.card-pokemon.dragon .image:after {
+  background-color: rgba(44, 106, 193, 0.2);
+}
+.card-pokemon.electric .image:after {
+  background-color: rgba(238, 218, 103, 0.2);
+}
+.card-pokemon.fairy .image:after {
+  background-color: rgba(226, 151, 225, 0.2);
+}
+.card-pokemon.fighting .image:after {
+  background-color: rgba(196, 77, 97, 0.2);
+}
+.card-pokemon.ground .image:after {
+  background-color: rgba(206, 128, 86, 0.2);
+}
+.card-pokemon.ice .image:after {
+  background-color: rgba(139, 206, 193, 0.2);
+}
+.card-pokemon.normal .image:after {
+  background-color: rgba(160, 162, 159, 0.2);
+}
+.card-pokemon.poison .image:after {
+  background-color: rgba(172, 106, 202, 0.2);
+}
+.card-pokemon.psychic .image:after {
+  background-color: rgba(235, 140, 133, 0.2);
+}
+.card-pokemon.rock .image:after {
+  background-color: rgba(139, 206, 193, 0.2);
+}
+.card-pokemon.ghost .image:after {
+  background-color: rgba(97, 110, 183, 0.2);
+}
+.card-pokemon.bug .image:after {
+  background-color: rgba(156, 186, 72, 0.2);
+}
+.card-pokemon.steel .image:after {
+  background-color: rgba(101, 148, 161, 0.2);
+}
+.card-pokemon.water .image:after {
+  background-color: rgba(136, 163, 212, 0.2);
+}
+.card-pokemon.fire .image:after {
+  background-color: rgba(246, 109, 109, 0.2);
+}
+.card-pokemon.flying .image:after {
+  background-color: rgba(166, 187, 232, 0.2);
+}
+.card-pokemon .image {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+}
+.card-pokemon .image:after {
+  content: "";
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+.card-pokemon .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 2.8rem;
+}
+.card-pokemon .info .text span {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 150%;
+  color: #7A7D80;
+  margin-bottom: 0.6rem;
+}
+.card-pokemon .info .icon {
+  margin-bottom: 1rem;
+}
+
+.tag-type {
+  display: inline-block;
+  padding: 0 2.5rem;
+  line-height: 2.4rem;
+  border-radius: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+.tag-type.bug {
+  color: #9BBA48;
+  background-color: rgba(156, 186, 72, 0.1);
+}
+.tag-type.dark {
+  color: #595761;
+  background-color: rgba(114, 184, 97, 0.1);
+}
+.tag-type.dragon {
+  color: #2C6AC1;
+  background-color: rgba(44, 106, 193, 0.1);
+}
+.tag-type.electric {
+  color: #D5BC34;
+  background-color: rgba(213, 189, 52, 0.1);
+}
+.tag-type.fairy {
+  color: #E296E1;
+  background-color: rgba(226, 150, 225, 0.1);
+}
+.tag-type.fighting {
+  color: #C44D61;
+  background-color: rgba(196, 77, 97, 0.1);
+}
+.tag-type.ground {
+  color: #CE8056;
+  background-color: rgba(206, 128, 86, 0.1);
+}
+.tag-type.normal {
+  color: #919191;
+  background-color: rgba(145, 145, 145, 0.1);
+}
+.tag-type.poison {
+  color: #AC6ACA;
+  background-color: rgba(172, 106, 202, 0.1);
+}
+.tag-type.psychic {
+  color: #EB8B85;
+  background-color: rgba(235, 140, 133, 0.1);
+}
+.tag-type.rock {
+  color: #84BEB3;
+  background-color: rgba(132, 190, 179, 0.1);
+}
+.tag-type.ghost {
+  color: #616EB7;
+  background-color: rgba(97, 110, 183, 0.1);
+}
+.tag-type.grass {
+  color: #73B861;
+  background-color: rgba(114, 184, 97, 0.1);
+}
+.tag-type.steel {
+  color: #6594A1;
+  background-color: rgba(101, 148, 161, 0.1);
+}
+.tag-type.water {
+  color: #4F77BE;
+  background-color: rgba(79, 120, 190, 0.1);
+}
+.tag-type.fire {
+  color: #E96303;
+  background-color: rgba(233, 99, 3, 0.1);
+}
+.tag-type.flying {
+  color: #758CBD;
+  background-color: rgba(117, 140, 189, 0.1);
+}
+
+.btn-load-more {
+  background-color: rgba(63, 93, 179, 0.1);
+  border-radius: 6px;
+  padding: 1.4rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+  color: #3F5DB3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-load-more:hover {
+  background-color: #3F5DB3;
+  color: #FFFFFF;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+}
+
+h1, h2 {
+  letter-spacing: -0.01em;
+  font-weight: bold;
+}
+
+h2, h3 {
+  color: #2F3133;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #3F5DB3;
+  padding-top: 6.7rem;
+  padding-bottom: 6.5rem;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .text h3 {
+  color: #FFFFFF;
+}
+footer .text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  color: rgba(255, 255, 255, 0.8);
+}
