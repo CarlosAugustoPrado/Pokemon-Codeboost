@@ -90,22 +90,22 @@
   }
   &.ghost {
     span {
-      color: #616EB7;
+      color: var(--type-ghost);
     }
   }
   &.bug {
     span {
-      color: #9BBA48;
+      color: var(--type-bug);
     }
   }
   &.dark {
     span {
-      color: #595761;
+      color: var(--type-dark);
     }
   }
   &.dragon {
     span {
-      color: #2C6AC1;
+      color: var(--type-dragon);
     }
   }
   &.electric {
@@ -115,17 +115,17 @@
   }
   &.fairy {
     span {
-      color: #E296E1;
+      color: var(--type-fairy);
     }
   }
   &.fighting {
     span {
-      color: #C44D61;
+      color: var(--type-fighting);
     }
   }
   &.ground {
     span {
-      color: #CE8056;
+      color: var(--type-ground);
     }
   }
   &.ice {
@@ -140,12 +140,12 @@
   }
   &.poison {
     span {
-      color: #AC6ACA;
+      color: var(--type-poison);
     }
   }
   &.psychic {
     span {
-      color: #EB8B85;
+      color: var(--type-psychic);
     }
   }
   &.rock {
@@ -155,12 +155,12 @@
   }
   &.grass {
     span {
-      color: #73B861;
+      color: var(--type-grass);
     }
   }
   &.steel {
     span {
-      color: #6594A1;
+      color: var(--type-steel);
     }
   }
   &.water {
@@ -321,7 +321,7 @@
       }
     }
   }
-  
+
   .image {
     position: relative;
     width: 20rem;
@@ -372,79 +372,75 @@
   text-align: center;
   letter-spacing: -0.01em;
   &.bug {
-    color: #9BBA48;
+    color: var(--type-bug);
     background-color: rgba(156, 186, 72, 0.1);
   }
   &.dark {
-    color: #595761;
+    color: var(--type-dark);
     background-color: rgba(114, 184, 97, 0.1);
   }
   &.dragon {
-    color: #2C6AC1;
+    color: var(--type-dragon);
     background-color: rgba(44, 106, 193, 0.1);
   }
   &.electric {
-    color: #D5BC34;
+    color: var(--type-electric);
     background-color: rgba(213, 189, 52, 0.1);
   }
   &.fairy {
-    color: #E296E1;
+    color: var(--type-fairy);
     background-color: rgba(226, 150, 225, 0.1);
   }
   &.fighting {
-    color: #C44D61;
+    color: var(--type-fighting);
     background-color: rgba(196, 77, 97, 0.1);
   }
   &.ground {
-    color: #CE8056;
+    color: var(--type-ground);
     background-color: rgba(206, 128, 86, 0.1);
   }
   &.normal {
-    color: #919191;
+    color: var(--type-normal);
     background-color: rgba(145, 145, 145, 0.1);
   }
   &.poison {
-    color: #AC6ACA;
+    color: var(--type-poison);
     background-color: rgba(172, 106, 202, 0.1);
   }
   &.psychic {
-    color: #EB8B85;
+    color: var(--type-psychic);
     background-color: rgba(235, 140, 133, 0.1);
   }
   &.rock {
-    color: #84BEB3;
+    color: var(--type-rock);
     background-color: rgba(132, 190, 179, 0.1);
   }
   &.ghost {
-    color: #616EB7;
+    color: var(--type-ghost);
     background-color: rgba(97, 110, 183, 0.1);
   }
   &.grass {
-    color: #73B861;
+    color: var(--type-grass);
     background-color: rgba(114, 184, 97, 0.1);
   }
   &.steel {
-    color: #6594A1;
+    color: var(--type-steel);
     background-color: rgba(101, 148, 161, 0.1);
   }
   &.water {
-    color: #4F77BE;
+    color: var(--type-water);
     background-color: rgba(79, 120, 190, 0.1);
   }
   &.fire {
-    color: #E96303;
+    color: var(--type-fire);
     background-color: rgba(233, 99, 3, 0.1);
   }
   &.flying {
-    color: #758CBD;
+    color: var(--type-flying);;
     background-color: rgba(117, 140, 189, 0.1);
   }
 
-
-
-
 }
-
 .btn-load-more  {
   background-color: rgba(63, 93, 179, 0.1);
   border-radius: 6px;
@@ -453,10 +449,10 @@
   font-weight: 600;
   font-size: 1.4rem; 
   letter-spacing: -0.01em;
-  color: #3F5DB3;
+  color: var(--blue-primary);
   transition: all .3s;
   &:hover {
-    background-color: #3F5DB3;
+    background-color: var(--blue-primary);
     color: #FFFFFF;
   } 
 }

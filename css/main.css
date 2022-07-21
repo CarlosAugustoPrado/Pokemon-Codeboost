@@ -1,3 +1,24 @@
+:root {
+  --type-bug: #9BBA48;
+  --type-dark: #595761;
+  --type-dragon: #2C6AC1;
+  --type-electric: #D5BC34;
+  --type-fairy: #E296E1;
+  --type-fighting: #C44D61;
+  --type-ground: #CE8056;
+  --type-normal: #919191;
+  --type-poison: #AC6ACA;
+  --type-psychic: #EB8B85;
+  --type-rock: #84BEB3;
+  --type-ghost: #616EB7;
+  --type-grass: #73B861;
+  --type-steel: #6594A1;
+  --type-water: #4F77BE;
+  --type-fire: #E96303;
+  --type-flying: #758CBD;
+  --blue-primary: #3F5DB3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -187,28 +208,28 @@ ul {
   line-height: 150%;
 }
 .type-filter.ghost span {
-  color: #616EB7;
+  color: var(--type-ghost);
 }
 .type-filter.bug span {
-  color: #9BBA48;
+  color: var(--type-bug);
 }
 .type-filter.dark span {
-  color: #595761;
+  color: var(--type-dark);
 }
 .type-filter.dragon span {
-  color: #2C6AC1;
+  color: var(--type-dragon);
 }
 .type-filter.electric span {
   color: #EED967;
 }
 .type-filter.fairy span {
-  color: #E296E1;
+  color: var(--type-fairy);
 }
 .type-filter.fighting span {
-  color: #C44D61;
+  color: var(--type-fighting);
 }
 .type-filter.ground span {
-  color: #CE8056;
+  color: var(--type-ground);
 }
 .type-filter.ice span {
   color: #8BCEC1;
@@ -217,19 +238,19 @@ ul {
   color: #A0A29F;
 }
 .type-filter.poison span {
-  color: #AC6ACA;
+  color: var(--type-poison);
 }
 .type-filter.psychic span {
-  color: #EB8B85;
+  color: var(--type-psychic);
 }
 .type-filter.rock span {
   color: #8BCEC1;
 }
 .type-filter.grass span {
-  color: #73B861;
+  color: var(--type-grass);
 }
 .type-filter.steel span {
-  color: #6594A1;
+  color: var(--type-steel);
 }
 .type-filter.water span {
   color: #88A3D4;
@@ -376,71 +397,71 @@ ul {
   letter-spacing: -0.01em;
 }
 .tag-type.bug {
-  color: #9BBA48;
+  color: var(--type-bug);
   background-color: rgba(156, 186, 72, 0.1);
 }
 .tag-type.dark {
-  color: #595761;
+  color: var(--type-dark);
   background-color: rgba(114, 184, 97, 0.1);
 }
 .tag-type.dragon {
-  color: #2C6AC1;
+  color: var(--type-dragon);
   background-color: rgba(44, 106, 193, 0.1);
 }
 .tag-type.electric {
-  color: #D5BC34;
+  color: var(--type-electric);
   background-color: rgba(213, 189, 52, 0.1);
 }
 .tag-type.fairy {
-  color: #E296E1;
+  color: var(--type-fairy);
   background-color: rgba(226, 150, 225, 0.1);
 }
 .tag-type.fighting {
-  color: #C44D61;
+  color: var(--type-fighting);
   background-color: rgba(196, 77, 97, 0.1);
 }
 .tag-type.ground {
-  color: #CE8056;
+  color: var(--type-ground);
   background-color: rgba(206, 128, 86, 0.1);
 }
 .tag-type.normal {
-  color: #919191;
+  color: var(--type-normal);
   background-color: rgba(145, 145, 145, 0.1);
 }
 .tag-type.poison {
-  color: #AC6ACA;
+  color: var(--type-poison);
   background-color: rgba(172, 106, 202, 0.1);
 }
 .tag-type.psychic {
-  color: #EB8B85;
+  color: var(--type-psychic);
   background-color: rgba(235, 140, 133, 0.1);
 }
 .tag-type.rock {
-  color: #84BEB3;
+  color: var(--type-rock);
   background-color: rgba(132, 190, 179, 0.1);
 }
 .tag-type.ghost {
-  color: #616EB7;
+  color: var(--type-ghost);
   background-color: rgba(97, 110, 183, 0.1);
 }
 .tag-type.grass {
-  color: #73B861;
+  color: var(--type-grass);
   background-color: rgba(114, 184, 97, 0.1);
 }
 .tag-type.steel {
-  color: #6594A1;
+  color: var(--type-steel);
   background-color: rgba(101, 148, 161, 0.1);
 }
 .tag-type.water {
-  color: #4F77BE;
+  color: var(--type-water);
   background-color: rgba(79, 120, 190, 0.1);
 }
 .tag-type.fire {
-  color: #E96303;
+  color: var(--type-fire);
   background-color: rgba(233, 99, 3, 0.1);
 }
 .tag-type.flying {
-  color: #758CBD;
+  color: var(--type-flying);
   background-color: rgba(117, 140, 189, 0.1);
 }
 
@@ -452,12 +473,12 @@ ul {
   font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: -0.01em;
-  color: #3F5DB3;
+  color: var(--blue-primary);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .btn-load-more:hover {
-  background-color: #3F5DB3;
+  background-color: var(--blue-primary);
   color: #FFFFFF;
 }
 
@@ -491,7 +512,7 @@ h3 {
 
 footer {
   width: 100%;
-  background-color: #3F5DB3;
+  background-color: var(--blue-primary);
   padding-top: 6.7rem;
   padding-bottom: 6.5rem;
 }
