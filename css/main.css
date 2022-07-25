@@ -871,6 +871,14 @@ header p {
   line-height: 1.6rem;
   color: #FFFFFF;
 }
+@media (max-width: 560px) {
+  header {
+    height: 8.2rem;
+  }
+  header img {
+    max-width: 12.9rem;
+  }
+}
 
 footer {
   width: 100%;
