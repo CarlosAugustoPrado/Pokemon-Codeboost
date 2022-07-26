@@ -808,6 +808,88 @@ ul {
 .modal .box .right-container .stats .all .item .bar-stats .separator li:not(:first-child) {
   margin-left: 5.4rem;
 }
+@media (max-width: 560px) {
+  .modal {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .modal .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+  }
+  .modal .box .close {
+    top: -5rem;
+    border-radius: 8px 8px 0 0;
+    width: 5rem;
+    height: 5rem;
+  }
+  .modal .box .close img {
+    width: 2.5rem;
+  }
+  .modal .box .left-container {
+    max-width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+  }
+  .modal .box .left-container .image {
+    left: 50%;
+    bottom: -2.5rem;
+    width: 12rem;
+    margin-left: -6rem;
+  }
+  .modal .box .left-container .image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .modal .box .right-container {
+    padding: 4rem 2.4rem;
+  }
+  .modal .box .right-container .name {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .modal .box .right-container .type {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .modal .box .right-container .info {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .modal .box .right-container .weak h4 {
+    text-align: center;
+  }
+  .modal .box .right-container .weak ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .modal .box .right-container .weak ul li:not(:first-child) {
+    margin: 0;
+  }
+  .modal .box .right-container .weak ul li .tag-type {
+    width: 100%;
+  }
+  .modal .box .right-container .stats .all .item:not(:last-child) {
+    margin-bottom: 2.3rem;
+  }
+  .modal .box .right-container .stats .all .item .bar-stats {
+    width: 75%;
+  }
+  .modal .box .right-container .stats .all .item .bar-stats .separator li:not(:first-child) {
+    margin-left: 19%;
+  }
+}
 
 .open-modal .modal {
   opacity: 1;
@@ -910,6 +992,26 @@ footer .text p {
   font-size: 14px;
   line-height: 180%;
   color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 560px) {
+  footer {
+    padding: 4rem 0;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .text {
+    margin-bottom: 4.8rem;
+  }
+  footer .text h3 {
+    text-align: center;
+  }
+  footer .text p {
+    text-align: center;
+  }
 }
 
 .s-area-slide-hero {
