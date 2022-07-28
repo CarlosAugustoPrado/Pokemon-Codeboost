@@ -335,6 +335,9 @@
     @include centerTotalFlex;
     margin: 0 auto;
     margin-bottom: 1.4rem;
+    .thumb-img {
+      max-width: 14.2rem;
+    }
     &:after {
       content: "";      
       width: 165px;
