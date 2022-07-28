@@ -1242,6 +1242,7 @@ footer .text p {
   max-width: 23.9rem;
   border-right: 1px solid #EFF3F6;
   padding-top: 7.1rem;
+  padding-bottom: 7.5rem;
 }
 .s-all-info-pokemons .area-all .left-container ul li:not(:last-child) {
   margin-bottom: 4rem;

@@ -123,3 +123,72 @@ function closeDetailsPokemon() {
   document.documentElement.classList.remove('open-modal');
 }
 
+// Script para listar todos os tipos de pokemon
+
+const areaType = document.getElementById('js-type-area');
+const areaTypeMobile = document.querySelector('.dropdown-select');
+
+axios ({
+  method: 'GET',
+  url: 'https://pokeapi.co/api/v2/type'
+})
+.then(response => {
+  const { results } = response.data;
+  results.forEach((type, index) => {
+
+    if (index < 18) {
+      let itemType = document.createElement('li');
+      areaType.appendChild(itemType);
+
+      let buttonType = document.createElement('button');
+      buttonType.classList = `type-filter ${type.name}`
+      itemType.appendChild(buttonType);
+
+      let iconType = document.createElement('div');
+      iconType.classList = "icon";
+      buttonType.appendChild(iconType);
+
+      let srcType = document.createElement('img');
+      srcType.setAttribute('src', `img/icon-types/${type.name}.svg`);
+      iconType.appendChild(srcType);
+
+      let nameType = document.createElement('span');
+      nameType.textContent = primeiraLetraMaiuscula(type.name);
+      buttonType.appendChild(nameType);
+
+      // Preenchimento do seletor de tipo para mobile
+      let itemTypeMobile = document.createElement('li');
+      areaTypeMobile.appendChild(itemTypeMobile);
+
+      let buttonTypeMobile = document.createElement('button');
+      buttonTypeMobile.classList = `type-filter ${type.name}`
+      itemTypeMobile.appendChild(buttonTypeMobile);
+
+      let iconTypeMobile = document.createElement('div');
+      iconTypeMobile.classList = "icon";
+      buttonTypeMobile.appendChild(iconTypeMobile);
+
+      let srcTypeMobile = document.createElement('img');
+      srcTypeMobile.setAttribute('src', `img/icon-types/${type.name}.svg`);
+      iconTypeMobile.appendChild(srcTypeMobile);
+
+      let nameTypeMobile = document.createElement('span');
+      nameTypeMobile.textContent = primeiraLetraMaiuscula(type.name);
+      buttonTypeMobile.appendChild(nameTypeMobile);
+    }
+  })
+})
+
+// Script para a funcionalidade do LoadMore
+
+const btnLoadMore = document.getElementById('js-btn-load-more');
+
+let countPagination = 10;
+
+function showMorePokemon() {
+  listingPokemons(`https://pokeapi.co/api/v2/pokemon?limit=9&offset=${countPagination}`);
+
+  countPagination = countPagination + 9;
+} 
+
+btnLoadMore.addEventListener('click', showMorePokemon);
