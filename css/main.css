@@ -471,6 +471,10 @@ ul {
   color: var(--type-flying);
   background-color: rgba(117, 140, 189, 0.1);
 }
+.tag-type.ice {
+  color: #5151b4;
+  background-color: rgba(117, 140, 189, 0.1);
+}
 
 .btn-load-more {
   background-color: rgba(63, 93, 179, 0.1);
@@ -649,6 +653,7 @@ ul {
 }
 .modal .box .right-container {
   padding: 3.5rem 7.2rem 2.9rem 7.4rem;
+  width: 100%;
 }
 .modal .box .right-container .name {
   display: -webkit-box;
@@ -687,7 +692,7 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.5rem;
 }
 .modal .box .right-container .type li:not(:first-child) {
   margin-left: 1rem;
@@ -699,7 +704,7 @@ ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 .modal .box .right-container .info li:not(:first-child) {
   margin-left: 4.8rem;
@@ -719,7 +724,7 @@ ul {
   color: #2F3133;
 }
 .modal .box .right-container .weak {
-  margin-bottom: 3.2rem;
+  margin-bottom: 1rem;
 }
 .modal .box .right-container .weak h4 {
   font-weight: 600;
@@ -740,8 +745,11 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.modal .box .right-container .weak ul li:not(:first-child) {
-  margin-left: 1rem;
+.modal .box .right-container .weak ul li {
+  margin-bottom: 1rem;
+}
+.modal .box .right-container .weak ul li:not(:last-child) {
+  margin-right: 1rem;
 }
 .modal .box .right-container .stats h5 {
   font-weight: 600;
