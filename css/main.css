@@ -704,12 +704,47 @@ ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  max-width: 35rem;
 }
-.modal .box .right-container .info li:not(:first-child) {
-  margin-left: 4.8rem;
+.modal .box .right-container .info li {
+  position: relative;
 }
-.modal .box .right-container .info li span {
+.modal .box .right-container .info li.abilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.modal .box .right-container .info li.abilities .more {
+  max-width: 2rem;
+  margin: auto;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  display: none;
+}
+.modal .box .right-container .info li.abilities .more:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.modal .box .right-container .info li.abilities .more-abilities {
+  display: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+  letter-spacing: -0.01em;
+  color: #2F3133;
+}
+.modal .box .right-container .info li.abilities .opened {
+  display: block;
+}
+.modal .box .right-container .info span {
   display: block;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -717,7 +752,7 @@ ul {
   color: #7A7D80;
   margin-bottom: 0.4rem;
 }
-.modal .box .right-container .info li strong {
+.modal .box .right-container .info strong {
   font-size: 1.4rem;
   line-height: 1.7rem;
   letter-spacing: -0.01em;
@@ -746,6 +781,9 @@ ul {
   flex-wrap: wrap;
 }
 .modal .box .right-container .weak ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1rem;
 }
 .modal .box .right-container .weak ul li:not(:last-child) {
@@ -1358,6 +1396,12 @@ footer .text p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3.2rem;
   margin-bottom: 6.8rem;
+}
+.s-all-info-pokemons .area-all .right-container .all.active {
+  display: block;
+}
+.s-all-info-pokemons .area-all .right-container .all.active h3 {
+  color: #4D5053;
 }
 .s-all-info-pokemons .area-all .right-container .btn-load-more {
   display: table;

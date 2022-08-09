@@ -332,11 +332,19 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 3.2rem;
         margin-bottom: 6.8rem;
+        &.active {
+          display: block;
+          h3 {
+            color: #4D5053;
+          }
+        }
+
       }
       .btn-load-more {
         display: table;
         margin: 0 auto;        
       }
+      
     }
   }
 

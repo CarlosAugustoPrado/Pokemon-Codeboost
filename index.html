@@ -119,7 +119,7 @@
           <div class="top-container">
             <div>
               <img src="/img/icon-pokeball.svg" alt="">
-              <span id="js-contagem-pokemons"><strong id="js-count-pokemons"> - </strong> Pokémons</span>
+              <span><strong id="js-count-pokemons"> - </strong> Pokémons</span>
             </div>           
           </div>
           <div class="select-custom">
@@ -193,10 +193,17 @@
             <span>Weight</span>
             <strong id="js-weight-pokemon">6.9kg</strong>
           </li>
-          <li>
+          <li class="abilities">
             <span>Abilities</span>
             <strong id="js-main-ability">Overgrow</strong>
-          </li>
+            <button class="more" id="js-show-more-abilities">
+              <img src="img/show-more.svg" alt="">
+            </button>
+            <div class="more-abilities" id="js-other-abilities">
+              <strong></strong>
+            </div>
+
+          </li>               
         </ul>
         <div class="weak">
           <h4>Weakness</h4>

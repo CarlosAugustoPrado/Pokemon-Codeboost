@@ -715,11 +715,39 @@
       .info {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 2rem;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        max-width: 35rem;       
         li {
-          &:not(:first-child) {
-            margin-left: 4.8rem;            
+          position: relative;  
+          &.abilities {            
+            display: flex;
+            flex-direction: column;
+            .more {
+              max-width: 2rem;
+              margin:auto;
+              transition: all .3;
+              display: none;
+              &:hover {
+                transform: scale(1.2);
+              }          
+            }
+            .more-abilities {
+              display: none;
+              font-size: 1.4rem;
+              font-weight: bold;
+              line-height: 1.7rem;            
+              letter-spacing: -0.01em;
+              color: #2F3133;
+              
+            }
+            .opened {
+              display: block;
+            } 
+            
+                   
           }
+          } 
           span {
             display: block;
             font-size: 1.3rem;
@@ -733,8 +761,7 @@
             line-height: 1.7rem;            
             letter-spacing: -0.01em;
             color: #2F3133;
-          }
-        }
+          }  
       }
       .weak {
         margin-bottom: 1rem;
@@ -752,12 +779,15 @@
           width: 100%;
           flex-wrap: wrap;
           li {
+            display: flex;
             margin-bottom: 1rem;
             &:not(:last-child) {
-              margin-right: 1rem;
+              margin-right: 1rem;              
             }
           }
+          
         }
+        
       }
       .stats {
         h5 {
